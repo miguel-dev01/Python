@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Mas Info
+{% endblock %}
+
+{% block content %}
+
+    <h1>Mas Información sobre el Coche</h1>
+
+    <p>Esta es la página de contactos</p>
+
+    {% for coche in listar_coches %}
+    <article class="article-item">
+
+        <div class="datos">
+            <p>
+                {{coche.1}}
+            </p>
+
+            <p>
+                {{coche.0}}
+
+                {{coche.2}}
+            </p>
+
+            <p>
+                {{coche.3}}
+            </p>
+
+        </div>
+    
+        <div class="clearfix"></div>
+    </article>
+{% endfor %}
+
+{% endblock %}

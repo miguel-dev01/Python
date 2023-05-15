@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Crear Coches
+{% endblock %}
+
+{% block content %}
+    <h1>Crea tu coche de ensueño</h1>
+
+    <form action="" method="POST">
+        <label for="marca">Marca del Coche:</label>
+        <input type="text" name="marca"/>
+
+        <label for="modelo">Modelo del Coche:</label>
+        <input type="text" name="modelo"/>
+
+        <label for="precio">Precio:</label>
+        <input type="number" name="precio"/>
+
+        <label for="ciudad">Ciudad de residencia:</label>
+        <input type="text" name="ciudad"/>
+
+        <input type="submit" value="Guardar formulario en la base de datos"/>
+    </form>
+
+
+{% endblock %}
