@@ -18,8 +18,8 @@ def muestranombres():
     print("Miguel")
     print("Victor")
     print("Elon Musk")
-    print("Claudia")
-    print("Andrea")
+    print("Maria")
+    print("Alejandro")
     print("Angel")
     print("\n")
 
@@ -79,7 +79,7 @@ getEmpleado("Miguel Sanchez")
 print("####### EJEMPLO 5 #######")
 
 def saludame(nombre):
-    saludo = f"Hola saludos, desde Marte, {nombre}"
+    saludo = f"Hola saludos, {nombre}"
 
     return saludo
 

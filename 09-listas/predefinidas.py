@@ -7,7 +7,7 @@ numeros.sort()
 print(numeros)
 
 # Añadir elementos
-cantantes.append("Perra","p")
+cantantes.append("Paco Pepe","p")
 cantantes.insert(1, "David Bisbal")
 print(cantantes)
 

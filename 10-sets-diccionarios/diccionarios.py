@@ -22,16 +22,16 @@ print(ejemplo["apellidos"])
 
 contactos = [
     {
-        'nombre':'Elon Musk',
-        'E-mail':'elonmusk@tesla.com'
+        'nombre':'Maria',
+        'E-mail':'maria@python.com'
     },
     {
         'nombre':'Luis',
-        'E-mail':'luis@tesla.com'
+        'E-mail':'luis@python.com'
     },
     {
         'nombre':'Miguel',
-        'E-mail':'miguel@tesla.com'
+        'E-mail':'miguel@python.com'
     }
 
 ]
@@ -44,7 +44,7 @@ print(contactos[2]['E-mail'])
 
 
 # Tambien se puede modificar su valor.
-contactos[2]['E-mail'] = "michael@tesla.com"
+contactos[2]['E-mail'] = "michael@python.com"
 print(contactos[2]['E-mail'])
 
 

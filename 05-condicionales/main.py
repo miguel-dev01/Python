@@ -1,4 +1,5 @@
-# Si un dato cumple una condicion se van a ejecutar un grupo de instrucciones y si no, se ejecutaran otro grupo de instrucciones.
+# Si un dato cumple una condicion se van a ejecutar un grupo de instrucciones 
+# y si no, se ejecutaran otro grupo de instrucciones.
 """
 #CONDICIONAL IF
 
@@ -60,7 +61,7 @@ else:
 print("\n##################### EJEMPLO 3 #########################")
 
 nombre = "Miguel Sanchez"
-ciudad = "Murcia City"
+ciudad = "Murcia"
 continente = "Europa"
 edad = int(input("Indique su edad:"))
 mayoria_edad = 18

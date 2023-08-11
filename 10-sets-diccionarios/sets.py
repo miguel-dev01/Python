@@ -4,12 +4,12 @@ SET --> Es una coleccion de datos o valores pero no tienen ningun index ni orden
 
 personas = {
     "Miguel",
-    "Francisco",
-    "Elon Musk"
+    "Paquico",
+    "Maria"
 }
 
-personas.add("Paquico")
-personas.remove("Francisco")
+personas.add("Quique")
+personas.remove("Paquico")
 
 print(type(personas))
 print(personas)

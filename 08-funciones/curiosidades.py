@@ -5,7 +5,7 @@ def miSegundaFuncion():
     return "Hola que tal 2" + apellidos
 
 
-nombre = "Miguelito"
+nombre = "Miguel"
 apellidos = "Sanchez"
 
 print("Hola mundo")

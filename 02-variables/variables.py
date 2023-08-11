@@ -6,7 +6,7 @@ se pueden crear muchas variables y que cada una tenga un dato distinto.
 # VARIABLES
 
 texto = "master en Python"
-texto2 = "segunda frase"
+texto2 = "Hola Mundo"
 numero = 45
 
 print(texto)
@@ -15,7 +15,7 @@ print(numero)
 
 # CONCATENACION
 
-nombre = "Miguelico"
+nombre = "Miguel"
 apellidos = "Sanchez"
 web = "blogmart.es"
 

@@ -1,5 +1,5 @@
 nada = None
-cadena = "Hola soy Miguelito"
+cadena = "Hola soy Miguel"
 flotante = 4.2
 booleano = True
 lista = [10, 20, 30, 100, 200]
@@ -9,7 +9,7 @@ TUPLAnocambia = ("master", "en", "python")
 diccionario = {
     "nombre": "Miguel",
     "apellido": "Sanchez",
-    "curso": "Peazo master en Python nene",
+    "curso": "master en Python",
 }
 
 
@@ -29,7 +29,7 @@ print(diccionario)
 print(type(diccionario))
 
 #convertir datos
-texto = "Hola soy un texto precioso"
+texto = "texto"
 numero = str(776)
 
 print(numero)

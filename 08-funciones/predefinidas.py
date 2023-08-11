@@ -1,4 +1,4 @@
-nombre = "Miguelito"
+nombre = "Miguel"
 
 
 # Funciones generales
