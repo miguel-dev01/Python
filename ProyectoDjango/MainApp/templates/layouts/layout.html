@@ -1,0 +1,89 @@
+<!-- EN ESTE FICHERO EN EL QUE VOY A ESTAR CARGANDO TODOS LOS TEMPLATES -->
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8"/>
+        <title>
+            {% block title %}
+            <!-- Titulo de cada página -->
+            {% endblock %}
+             | Miguel Sánchez
+        </title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+    </head>
+
+    <body>
+        <!-- Cabecera de la página -->
+        <header>
+            <div id="logotipo">
+                <!-- Logo Django -->
+                <img src="{% static 'images/logo.png' %}"/>
+                <h1> Proyecto con Django </h1>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="{% url 'Inicio' %}">Inicio</a>
+                </li>
+                {% if user.email %}
+
+                    <li>
+                        <a href="{% url 'Articulos' %}">Categorias</a>
+                        <ul>
+                            {% for categoria in Categoriass %}
+                            <li>
+                                <a href="{% url 'Categorias' categoria.0 %}">{{categoria.1}}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+
+                    {% for page in pages %}
+                        <li>
+                            <a href="{% url 'Page' page.2 %}">{{page.1}}</a>
+                        </li>
+                    {% endfor %}
+
+                    <li>
+                        <a href="{% url 'Desloguearse' %}">Cerrar sesión</a>
+                    </li>
+
+                {% else %}
+
+                    <li>
+                        <a href="{% url 'Registrar' %}">Regístrate</a>
+                    </li>
+
+                    <li>
+                        <a href="{% url 'Loguear' %}">Logueate</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
+
+        <div class="barra">
+            <span class="esquina-izquierda"></span>
+            <span class="relleno-barra"></span>
+            <span class="esquina-derecha"></span>
+        </div>
+
+        <div id="content">
+            <div class="box">
+                {% block content %}
+                    <!-- Código que viene de los demás ficheros de HTMl de la propia carpeta de templates-->
+
+                {% endblock %}
+            </div>
+        </div>
+
+        <footer>
+            Máster en Python. Instructor: Victor Robles &copy; | Desarrollado y diseñado por Miguel Sánchez García - {% now "d/m/Y" %}
+        </footer>
+
+    </body>
+
+</html>

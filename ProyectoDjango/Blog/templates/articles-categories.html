@@ -1,0 +1,35 @@
+<h1 class="title"> {{title}} </h1>
+
+{% for articulo in articulicos %}
+    <article class="article-item">
+        {% if articulo.image != 'null' and articulo.image.url|length >= 1 %}
+        
+            <div class="imagen">
+                <img src="{{ articulo.image.url }}" />
+            </div>
+        {% endif %}
+
+
+        <div class="datos">
+            <h3>
+                <a href="{% url 'Articulo-En-Cada-Pagina' articulo.id %}">{{articulo.title}}</a>
+            </h3>
+            {% for categoria in articulo.categories.all %}
+
+                <strong>Categoría: </strong> {{categoria}}
+
+                {% if forloop.counter < article.categories.all|length %}
+                    {{'-'}}
+                {% endif %}
+
+                <br/>
+
+            {% endfor %}
+            <br/>
+            <strong>Usuario: </strong>{{articulo.user}}
+            <p>{{articulo.content|safe}}</p>
+        </div>
+    
+        <div class="clearfix"></div>
+    </article>
+{% endfor %}

@@ -1,0 +1,29 @@
+{% extends 'layouts/layout.html' %}
+
+{% block title %}
+    {{title}}
+{% endblock %}
+
+
+{% block content %}
+    <h1 class="title"> {{title}} </h1>
+
+    <form method="post" action="">
+        {% csrf_token %}
+
+        {% comment %}
+            {{registraco.as_p}}
+        {% endcomment %}
+
+        {% for field in registraco %}
+            {{field.label}}
+            
+            {{field}}
+        {% endfor %}
+
+        <input type="submit" value="Registrarse"/>
+    </form>
+
+
+
+{% endblock %}
